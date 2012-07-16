@@ -4,9 +4,8 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>rhtml</string>
-		<string>erb</string>
-		<string>html.erb</string>
+		<string>ejs</string>
+		<string>html.ejs</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
@@ -20,28 +19,10 @@
 		|^\s*--&gt;
 		|(^|\s)\}
 		)</string>
-	<key>keyEquivalent</key>
-	<string>^~R</string>
 	<key>name</key>
-	<string>HTML (Rails)</string>
+	<string>HTML (EJS)</string>
 	<key>patterns</key>
 	<array>
-		<dict>
-			<key>begin</key>
-			<string>&lt;%+#</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.erb</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>%&gt;</string>
-			<key>name</key>
-			<string>comment.block.erb</string>
-		</dict>
 		<dict>
 			<key>begin</key>
 			<string>&lt;%+(?!&gt;)[-=]?</string>
@@ -50,32 +31,19 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.embedded.ruby</string>
+					<string>punctuation.section.embedded.js</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>-?%&gt;</string>
+
 			<key>name</key>
-			<string>source.ruby.rails.embedded.html</string>
+			<string>source.js.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.comment.ruby</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(#).*?(?=-?%&gt;)</string>
-					<key>name</key>
-					<string>comment.line.number-sign.ruby</string>
-				</dict>
-				<dict>
 					<key>include</key>
-					<string>source.ruby.rails</string>
+					<string>source.js</string>
 				</dict>
 			</array>
 		</dict>
@@ -85,7 +53,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>text.html.ruby</string>
+	<string>text.html.js</string>
 	<key>uuid</key>
 	<string>45D7E1FC-7D0B-4105-A1A2-3D10BB555A5C</string>
 </dict>
